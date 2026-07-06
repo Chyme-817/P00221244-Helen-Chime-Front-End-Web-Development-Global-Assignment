@@ -24,7 +24,7 @@
 <main>
 <section class="search-container">
 <h2 class="section-title">Our Unique Coffee Blends</h2>
-<input type="text" id="coffeeSearch" placeholder="Search for blends...">
+<input type="text" id="coffeeSearch" placeholder="Search for blends..." onkeyup="filterCoffee()">
 </section>
 
 <div class="grid-container">
@@ -35,7 +35,7 @@
 <p>A light-roasted single-origin coffee with a vibrant personality.</p>
 <blockquote>Notes: Floral, Citrus, Bright Honey</blockquote>
 <p><strong>Brew Method:</strong> Pour Over (V60)</p>
-<button class="btn">Add to Cart</button>
+<button class="btn" onclick="addToCart('Yirgacheffe')">Add to Cart</button>
 </div>
 </div>
 
@@ -46,7 +46,7 @@
 <p>Our signature rich, full-bodied dark roast crafted for daily community enjoyment.</p>
 <blockquote>Notes: Dark Chocolate, Roasted Walnut</blockquote>
 <p><strong>Brew Method:</strong> Espresso / Moka Pot</p>
-<button class="btn">Add to Cart</button>
+<button class="btn" onclick="addToCart('Signature House Blend')">Add to Cart</button>
 </div>
 </div>
 
@@ -57,7 +57,7 @@
 <p>A delightful blend of rich coffee and smooth chocolate, perfect for those with a sweet tooth.</p>
 <blockquote>Notes: Chocolate, Caramel, Creamy</blockquote>
 <p><strong>Brew Method:</strong> Espresso / Moka Pot</p>
-<button class="btn">Add to Cart</button>
+<button class="btn" onclick="addToCart('Chocolate Mocha')">Add to Cart</button>
 </div>
 </div>
 
@@ -68,13 +68,17 @@
 <p>A full-bodied, complex single-origin coffee with a rich, smoky flavor profile.</p>
 <blockquote>Notes: Spicy, Nutty, Full Body</blockquote>
 <p><strong>Brew Method:</strong> Espresso / Moka Pot</p>
-<button class="btn">Add to Cart</button>
+<button class="btn" onclick="addToCart('Guatemalan Antigua')">Add to Cart</button>
 </div>
 </div>
 
 </div>
 </main>
-
+<script>
+    function addToCart(coffeeName) {
+        alert(coffeeName + " has been added to your cart!");
+    }
+</script>
 <footer>
 <p>© 2026 Bean Boutique Coffeeshop. All rights reserved.</p>
 </footer>
