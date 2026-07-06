@@ -50,9 +50,15 @@ margin-bottom: 1rem;
 font-size: 1.2rem;
 margin-bottom: 2rem;
 }
+.card {
+    display: inline-block;
+    width: 46%;
+    margin: 1.5%;
+    vertical-align: top;
+    box-sizing:border-box;
+}
 
 .btn {
-
 background-color: var(--accent-color);
 color: var(--primary-color);
 padding: 0.8rem 2rem;
@@ -80,7 +86,35 @@ position: relative;
 }
 
 .grid-container {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-gap: 2.5rem;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding: 20px;
+gap: 20px;
+}
+
+.search-container {
+text-align: center;
+margin-bottom: 3rem;
+}   
+#coffeeSearch {
+padding: 0.8rem;
+width: 100%;
+max-width: 400px;
+border-radius: 20px;
+border: 2px solid #4a3424;
+outline: none;
+}
+.card blockquote {
+margin: 0.5rem 0;
+font-style: italic;
+color: #d4a373;
+}
+.btn {
+border: 2px solid #000000;
+padding: 10px 20px;
+border-radius: 25px;
+margin-top: 1rem;
+width: 100%;
+cursor: pointer;
 }
