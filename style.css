@@ -1,0 +1,86 @@
+.logo {
+color: var(--white);
+font-size: 1.6rem;
+font-weight: bold;
+letter-spacing: 1px;
+}
+.nav-links {
+display: flex;
+list-style: none;
+}
+
+.nav-links li {
+margin-left: 1.5rem;
+}
+
+.nav-links a {
+color: var(--white);
+
+text-decoration: none;
+font-weight: 500;
+padding: 0.5rem 0;
+transition: var(--transition);
+border-bottom: 2px solid transparent;
+}
+.nav-links a:hover,
+.nav-links a.active {
+color: var(--accent-color);
+border-bottom: 2px solid var(--accent-color);
+}
+
+.banner {
+background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29mZmVlJTIwYmVhbnxlbnwwfHwwfHx8&auto=format&fit=crop&w=800&q=60') center/cover no-repeat;
+
+height: 60vh;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+color: var(--white);
+padding: 0 1rem;
+}
+
+.intro-text h1 {
+font-size: 3rem;
+margin-bottom: 1rem;
+}
+
+.middle-section p {
+font-size: 1.2rem;
+margin-bottom: 2rem;
+}
+
+.btn {
+
+background-color: var(--accent-color);
+color: var(--primary-color);
+padding: 0.8rem 2rem;
+text-decoration: none;
+font-weight: bold;
+border-radius: 30px; /* Rounded Border */
+transition: var(--transition);
+box-shadow: var(--shadow);
+}
+
+.btn:hover {
+background-color: var(--white);
+transform: translateY(-3px);
+}
+
+main {
+padding: 4rem 5%;
+}
+
+.section-title {
+text-align: center;
+margin-bottom: 3rem;
+font-size: 2.2rem;
+position: relative;
+}
+
+.grid-container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 2.5rem;
+}
