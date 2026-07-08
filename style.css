@@ -160,3 +160,54 @@ cursor: pointer;
     height: auto;
     border-radius: 10px;
 }
+.event-container {
+    margin-bottom: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 20px;
+}
+.event-card{
+    box-sizing: border-box;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    flex: 1 1 calc(50% - 1rem);
+}
+.event-card img {
+    width: 70px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+.registration-form .btn{
+    border: white 2px solid;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+}
+.registration-form select{
+    width: 280px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.registration-form label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.registration-form h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.registration-form{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
