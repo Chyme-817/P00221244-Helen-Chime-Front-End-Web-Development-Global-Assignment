@@ -23,53 +23,52 @@
   </header>
 <main>
   <div class="form-box">
-
     <h1>Contact Us</h1>
     <p class="intro">We'd love to hear from you. Please fill out the form below and we'll get back to you as soon as possible.</p>
 
-    <div class="section">
-      <h2>Your Information</h2>
+    <form id="contactForm">
+      <div class="section">
+        <h2>Your Information</h2>
 
-      <div class="form-group">
-        <label for="contact-name">Full Name</label>
-        <input type="text" id="contact-name" placeholder="e.g. Helen Chime" />
+        <div class="form-group">
+          <label for="contact-name">Full Name</label>
+          <input type="text" id="contact-name" placeholder="e.g. Helen Chime" required />
+        </div>
+
+        <div class="form-group">
+          <label for="contact-email">Email Address</label>
+          <input type="email" id="contact-email" placeholder="e.g. your.email@example.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="contact-phone">Phone Number</label>
+          <input type="tel" id="contact-phone" placeholder="e.g. +265 99**********" />
+        </div>
+
+        <div class="form-group">
+          <label for="contact-subject">Subject</label>
+          <input type="text" id="contact-subject" placeholder="e.g. Inquiry about our coffee" required />
+        </div>
       </div>
 
-      <div class="form-group">
-        <label for="contact-email">Email Address</label>
-        <input type="email" id="contact-email" placeholder="e.g. your.email@example.com" />
+      <div class="section">
+        <h2>Your Message</h2>
+
+        <div class="form-group">
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" placeholder="Please type your message here..." required></textarea>
+        </div>
       </div>
 
-      <div class="form-group">
-        <label for="contact-phone">Phone Number</label>
-        <input type="tel" id="contact-phone" placeholder="e.g. +265 99**********" />
-      </div>
-
-      <div class="form-group">
-        <label for="contact-subject">Subject</label>
-        <input type="text" id="contact-subject" placeholder="e.g. Inquiry about our coffee" />
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>Your Message</h2>
-
-      <div class="form-group">
-        <label for="contact-message">Message</label>
-        <textarea id="contact-message" placeholder="Please type your message here..."></textarea>
-      </div>
-    </div>
-
-    <button type="submit">Send Message</button>
-    </div>
-  
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
 </main>
-<script>
-    document.querySelector('form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        alert('Thank you for reaching out! We will get back to you shortly.');
-    });
-</script>
+<section class="map">
+  <h3>Find Our Bean Boutique Shop</h3>
+  <<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9504.915613769354!2d33.75000586774643!3d-13.936272656560314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1921d47e506f9049%3A0xa2b8e7e1edb46dc2!2sMt.%20Meru%20Filling%20Station%2C%20Opposite%20Bingu%20Stadium%2C%20LL!5e1!3m2!1sen!2smw!4v1783937899771!5m2!1sen!2smw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+</section>
+<script src="contact.js"></script>
 
   <footer>
         <p>&copy; 2026 Bean Boutique Coffeeshop. All rights reserved.</p>
