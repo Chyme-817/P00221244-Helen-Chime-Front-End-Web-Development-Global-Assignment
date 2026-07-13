@@ -20,8 +20,8 @@ function addToCart(itemName) {
     if (existingItem) {
         existingItem.quantity += 1;
     } else {
-        items.push({ name: itemName, quantity: 1 });
-    }
+        items.push({ name: itemName, quantity:1});
+    } 
 
     saveCartItems(items);
     alert(itemName + " has been added to your cart!");
@@ -79,12 +79,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
- const contactForm = document.getElementById('contactForm');
+const contactForm = document.getElementById('contactForm');
 
-  if (contactForm) {
+if (contactForm) {
     contactForm.addEventListener('submit', function (event) {
-      event.preventDefault();
-      alert('Thank you for reaching out! We will get back to you shortly.');
-      contactForm.reset();
+        event.preventDefault();
+        alert('Thank you for reaching out! We will get back to you shortly.');
+        contactForm.reset();
     });
-  }
+}

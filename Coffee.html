@@ -25,7 +25,7 @@
 <main>
 <section class="search-container">
 <h1>Our Unique Coffee Blends</h1>
-<input type="text" id="coffeeSearch" placeholder="Search for blends..." onkeyup="filterCoffee()">
+<input type="text" id="coffeeSearch" placeholder="Search for blends...">
 </section>
 
 <div class="grid-container">
@@ -39,7 +39,7 @@
 <p><strong>Price:</strong> MWK6,500 / 250g</p>
 <label>Quantity: </label>
 <input type="number" value="1" min="1"> 
-<button class="btn" onclick="addToCart('Yirgacheffe')">Add to Cart</button>
+<button class="btn" data-coffee-name="Yirgacheffe">Add to Cart</button>
 </div>
 </div>
 
@@ -53,7 +53,7 @@
 <p><strong>Price:</strong> MWK8,000 / 250g</p>
 <label>Quantity: </label>
 <input type="number" value="1" min="1"> 
-<button class="btn" onclick="addToCart('Signature House Blend')">Add to Cart</button>
+<button class="btn" data-coffee-name="Signature House Blend">Add to Cart</button>
 </div>
 </div>
 
@@ -67,7 +67,7 @@
 <p><strong>Price:</strong> MWK12,500 / 250g</p>
 <label>Quantity: </label>
 <input type="number" value="1" min="1">
-<button class="btn" onclick="addToCart('Chocolate Mocha')">Add to Cart</button>
+<button class="btn" data-coffee-name="Chocolate Mocha">Add to Cart</button>
 </div>
 </div>
 
@@ -81,17 +81,13 @@
 <p><strong>Price:</strong> MWK9,500 / 250g</p>
 <label>Quantity: </label>
 <input type="number" value="1" min="1">
-<button class="btn" onclick="addToCart('Guatemalan Antigua')">Add to Cart</button>
+<button class="btn" data-coffee-name="Guatemalan Antigua">Add to Cart</button>
 </div>
 </div>
 
 </div>
 </main>
-<script>
-    function addToCart(coffeeName) {
-        alert(coffeeName + " has been added to your cart!");
-    }
-</script>
+<script src="script.js"></script>
 <footer>
 <p>© 2026 Bean Boutique Coffeeshop. All rights reserved.</p>
 </footer>

@@ -65,19 +65,19 @@
 
 <section class="registration-form">
 <h2 class="section-title">Reserve Your Seat</h2>
-<form action="#" method="post">
+<form id="eventForm" action="#" method="post">
     <div>
         <label>Full Name:</label>
-        <input type="text" required>
+        <input type="text" id="fullName" required>
     </div>
     <div>
         <label>Email Address:</label>
-        <input type="email" required>
+        <input type="email" id="email" required>
     </div>
     <div>
         <label>Select Workshop:</label>
-        <select>
-            <option>Choose a Workshop</option>
+        <select id="workshop">
+            <option value="">Choose a Workshop</option>
             <option>Barista & Brewing Workshop (July 12)</option>
             <option>Coffee Cupping & Tasting (August 15)</option>
             <option>Latte Art Basics (July 28)</option>
@@ -94,5 +94,6 @@
 <p>© 2026 Bean Boutique Coffeeshop. All rights reserved.</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
